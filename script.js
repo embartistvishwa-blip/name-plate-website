@@ -35,9 +35,10 @@ function sendWhatsApp() {
   if (thread) plain += 'Thread: ' + thread + '\n';
   plain += 'Mobile: ' + mobile + '\n';
   plain += 'Address: ' + address + '\n';
-  plain += 'Price: ₹299';
+  plain += 'Price: ₹100';
 
   let phone = '918922094097'; // seller phone (country code + number)
   let url = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(plain);
   window.open(url, '_blank');
 }
+
